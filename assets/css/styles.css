@@ -1,0 +1,11 @@
+.field-icon {
+	float: right;
+	margin-right: 12px;
+	margin-top: -30px;
+	position: relative;
+	z-index: 2;
+}
+
+.primary-bg {
+	background-color: #035888;
+}

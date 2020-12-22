@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>College Portal | Login</title>
+		<link rel="stylesheet" href="assets/font-awesome/css/all.css" />
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="assets/css/styles.css" rel="stylesheet" />
+	</head>
+	<body>
+		<!-- Header Navbar -->
+		<header class="navbar navbar-expand-md navbar-dark primary-bg bd-navbar">
+			<nav
+				class="container flex-wrap flex-md-nowrap"
+				aria-label="Main navigation"
+			>
+				<a class="navbar-brand p-0 me-2" href="/" aria-label="Bootstrap">
+					<img src="assets/img/logo.svg" height="51" />
+				</a>
+
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#bdNavbar"
+					aria-controls="bdNavbar"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<svg
+						class="bi"
+						viewBox="0 0 16 16"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							fill-rule="evenodd"
+							d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+						></path>
+					</svg>
+				</button>
+
+				<div class="collapse navbar-collapse" id="bdNavbar">
+					<ul
+						class="navbar-nav flex-row flex-wrap ms-md-auto bd-navbar-nav pt-2 py-md-0"
+					>
+						<li class="nav-item col-6 col-md-auto">
+							<a
+								class="nav-link p-2 active"
+								aria-current="page"
+								href="/"
+								onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');"
+								>Home</a
+							>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="navbarDropdown"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Admission
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li><hr class="dropdown-divider" /></li>
+								<li>
+									<a class="dropdown-item" href="#">Something else here</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+
+					<hr class="d-md-none text-white-50" />
+
+					<ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+						<a
+							class="btn btn-light btn-md d-lg-inline-block my-2 my-md-0 ms-md-3"
+							href="#"
+							>User Login</a
+						>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!-- End of Navbar -->
+
+		<!-- Begining of main content -->
+		<main>
+			<div class="container">
+				<div class="row mt-5">
+					<div class="col-md-10 m-auto">
+						<div class="row mt-5">
+							<div class="col-md-6 align-self-center">
+								<div class="row mb-2">
+									<div class="col-1">
+										<div class="form-check">
+											<input
+												class="form-check-input"
+												type="radio"
+												name="flexRadioDefault"
+												id="flexRadioDefault1"
+											/>
+											<!-- <label class="form-check-label" for="flexRadioDefault1">
+												Default radio
+											</label> -->
+										</div>
+									</div>
+									<div class="col-11">
+										<h6 class="text-uppercase">Single Sign-on</h6>
+										<p class="small">
+											Sign in once and have access to all privileged content
+											from one spot
+										</p>
+									</div>
+								</div>
+								<div class="row mb-2">
+									<div class="col-1">
+										<div class="form-check">
+											<input
+												class="form-check-input"
+												type="radio"
+												name="flexRadioDefault"
+												id="flexRadioDefault1"
+											/>
+											<!-- <label class="form-check-label" for="flexRadioDefault1">
+												Default radio
+											</label> -->
+										</div>
+									</div>
+									<div class="col-11">
+										<h6 class="text-uppercase">Secure & Personalized</h6>
+										<p class="small">
+											Completely control the look and feel of content over a
+											secure channel
+										</p>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-1">
+										<div class="form-check">
+											<input
+												class="form-check-input"
+												type="radio"
+												name="flexRadioDefault"
+												id="flexRadioDefault1"
+											/>
+											<!-- <label class="form-check-label" for="flexRadioDefault1">
+												Default radio
+											</label> -->
+										</div>
+									</div>
+									<div class="col-11">
+										<h6 class="text-uppercase">All Together</h6>
+										<p class="small">
+											Admissions, Registration, Fees Payment, Exams & Records,
+											Student Self-Care (My School), Library, College Shop..
+										</p>
+
+										<p class="mt-5 mb-0 text-danger">For Help:</p>
+										<span class="font-weight-light small"
+											>Contact the College Support <br />
+											Email: college.support@socketworksng.com</span
+										>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="card mt-4">
+									<h5 class="text-center my-4">User Login</h5>
+
+									<div class="mb-3 px-4">
+										<label for="username" class="form-label small"
+											>User Name</label
+										>
+										<input
+											type="text"
+											name="username"
+											class="form-control form-control-lg bg-light border-0"
+										/>
+									</div>
+									<div class="px-4 mb-3">
+										<label for="username" class="form-label small"
+											>Password</label
+										>
+										<input
+											type="password"
+											name="password"
+											class="form-control form-control-lg bg-light border-0"
+										/>
+										<span class="fa fa-eye field-icon"></span>
+									</div>
+									<p class="small text-end px-4">Forgot Password?</p>
+									<div class="d-grid gap-2 p-4">
+										<button class="btn btn-lg primary-bg text-white">
+											<small>Submit</small>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr class="mt-5" />
+				<div class="text-end">
+					<img src="assets/img/sw-logo.png" />
+				</div>
+			</div>
+		</main>
+		<!-- End of Main content -->
+
+		<script src="assets/js/bootstrap.bundle.min.js"></script>
+		<script defer src="assets/font-awesome/js/all.js"></script>
+	</body>
+</html>
