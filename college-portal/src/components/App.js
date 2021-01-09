@@ -9,12 +9,17 @@ import UpdateSchoolInfo from './pages/update-school-info';
 import AdminSetup from './pages/admin-setup';
 import AddCourses from './pages/add-courses';
 import AddSchool from './pages/add-school';
+import ChangePassword from './pages/change-password';
+import AddSchoolProgram from './pages/add-school-program';
+import ApplicationSetup from './pages/application-setup';
+import SchoolSetup from './pages/school-setup';
 
 class App extends React.Component {
 	render() {
 		return (
 			<Router>
 				<div>
+					<Route exact path='/' component={Login} />
 					<Route path='/login' component={Login} />
 					<Route path='/reset-password' component={ResetPassword} />
 					<Route path='/reset-password-success' component={PasswordResetSuccess} />
@@ -23,6 +28,10 @@ class App extends React.Component {
 					<Route path='/admin-setup' component={AdminSetup} />
 					<Route path='/add-courses' component={AddCourses} />
 					<Route path='/add-school' component={AddSchool} />
+					<Route path='/change-password' component={ChangePassword} />
+					<Route path='/add-school-program' component={AddSchoolProgram} />
+					<Route path='/application-setup' component={ApplicationSetup} />
+					<Route path='/school-setup' component={SchoolSetup} />
 				</div>
 			</Router>
 		);

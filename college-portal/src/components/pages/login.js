@@ -1,7 +1,14 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import Header from '../templates/header';
 
 const Login = () => {
+	const history = useHistory();
+
+	const handleClick = () => {
+		history.push('/school-setup');
+	};
+
 	return (
 		<div>
 			<Header />
@@ -92,7 +99,7 @@ const Login = () => {
 										</div>
 										<p className='small text-end px-4'>Forgot Password?</p>
 										<div className='d-grid gap-2 p-4'>
-											<button className='btn btn-lg primary-bg text-white'>
+											<button type='button' onClick={handleClick} className='btn btn-lg primary-bg text-white'>
 												<small>Submit</small>
 											</button>
 										</div>
